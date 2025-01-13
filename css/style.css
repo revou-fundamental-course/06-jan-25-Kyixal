@@ -7,17 +7,14 @@
     border-radius: 50%;
     height: 50px;
     width: 50px;
-    background-image: url();
+    background-image: url(https://picsum.photos/200/300);
     background-size: cover;
 }
 .banner-image {
     height: 450px;  
-    background-image: url();
+    background-image: url(https://picsum.photos/200);
     background-size: cover;
     background-position: center;
-}
-.content {
-    height: 500px;
 }
 
 footer {
@@ -44,4 +41,8 @@ nav > a {
 
 .right-rounded {
     border-radius: 0 5px 5px 0px;
+}
+
+body {
+    background-color: #EDE8F5;
 }
