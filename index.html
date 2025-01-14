@@ -26,23 +26,25 @@
         </nav>
     </header>
 
-    <hr/>
 
     <!--Main Content-->
     <main>
         <!-- Home Page -->
-        <section>
+        <section class="home">
             <header id="home-page">
-                <h1>Hi <span id="user-greeting">User</span>, Welcome To Website</h1>
-                <p>Ini adalah website latihan pertama.</p>
+                <h1>HI <span id="user-greeting">...</span>, WELCOME!</h1>
             </header>
             <div class="banner-image">
 
             </div>
         </section>
 
+
+    <hr class="body-line"/>
+
+
         <!-- Our Profile -->
-        <section>
+        <section class="profile">
             <!-- Title -->
             <header id="our-profile">
                 <h1>Our Profile</h1>
@@ -56,8 +58,12 @@
             </div>
         </section>
 
+
+    <hr class="body-line"/>
+
+
         <!-- Portofolio -->
-        <section>
+        <section class="portofolio">
             <!-- Title -->
             <header id="portofolio">
                 <h1>Portofolio</h1>
@@ -67,44 +73,66 @@
 
             </div>
         </section>
-        
+
+
+    <hr class="body-line"/>
+
+
         <!-- Message Us -->
-        <section>
+        <section class="message">
             <!-- Title -->
             <header id="message-us">
                 <h1>Message Us</h1>
             </header>
             <!-- Content -->
-            <div class="content">
-                <!-- Form -->
-                <form action="" method="post">
-                    <label for="name">Name :</label>
-                    <input id="name" type="text" value="Name">
-                    <br>
-                    <label for="birthday">Birthday :</label>
-                    <input id="birthday" type="date" value="Date">
-                    <br>
-                    <label for="gender">Gender :</label>
-                        <label for="male">Male</label>
-                        <input type="radio" id="male" name="gender" value="Male">
-                        <label for="fem ale">Female</label>
-                        <input type="radio" id="female" name="gender" value="Female">
-                    <br>
-                    <label for="message">Message :</label>
-                    <textarea rows="8" cols="64">Message</textarea>
-                    <br>
-                    <input id="submit" type="submit" value="OK">
-                </form>
-            </div>
+            <main class="contentmessage">
+                <div class="content">
+                    <!-- Form -->
+                    <form name="message-form" onsubmit="return validateForm()">
+                        Nama: 
+                        <input placeholder="Nama" type="text" name="full-name"/>
+                        <br/>
+
+                        Tanggal Lahir:
+                        <input type="date" name="birth-date" />
+                        <br/>
+
+                        Jenis Kelamin:
+                        <input type="radio" id="male" name="gender" value="male"/>
+                        <label for="male">Laki-Laki</label>
+                        <input type="radio" id="female" name="gender" value="female"/>
+                        <label for="female">Perempuan</label>
+                        <br/>
+
+                        Pesan:
+                        <textarea placeholder="Pesan" name="messages"></textarea>
+                        <br/>
+
+                        <input type="submit" value="Submit"/>
+                    </form>
+                </div>
+                <div class="kanan-form">
+                    <p>Nama:<span id="sender-full-name"></span></p> 
+                    <p>Tanggal Lahir:<span id="sender-birth-date"></span></p>
+                    <p>Jenis Kelamin:<span id="sender-gender"></span></p>
+                    <p>Pesan:<span id="sender-messages"></span></p>
+                </div>
+            </main>
         </section>
     </main>
 
-    <hr/>
+
+
+
+
 
     <!--Footer-->
     <footer>
         <p>&copy; 2025 - All rights reserved</p>
     </footer>
+
+
+    <script src="js\script.js"></script>
 </body>
 
 </html>

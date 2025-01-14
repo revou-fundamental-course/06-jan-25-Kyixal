@@ -1,37 +1,57 @@
+@media only screen and (max-width:750px){
+    .main-header {
+        flex-direction: column;
+    }
+    nav{
+        width: 100%;
+        flex-direction: column;
+    }
+    .logo-icon{
+        margin:10px;
+    }
+}
+
+
+body {
+    background-color: #ede8f5;
+    color:#001e20;
+    text-align: justify;
+}
+
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #003135;
+    padding:16px 24px;
+    
 }
+
 .logo-icon {
     border-radius: 50%;
     height: 50px;
     width: 50px;
     background-image: url(https://picsum.photos/200/300);
     background-size: cover;
-}
-.banner-image {
-    height: 450px;  
-    background-image: url(https://picsum.photos/200);
-    background-size: cover;
-    background-position: center;
-}
+    margin-left: 20px ;
 
-footer {
-    text-align: center
 }
 
 nav {
     display:flex;
+    background-color: #ede8f5;
+    border: 0px ;
+    border-radius : 5px;
+    margin:20px;
 }
 
 nav > a {
-    border: 1px solid;
+    border: 1px solid #001e20;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-right: 30px;
     padding-left: 30px;
-    color: black;
+    color: #001e20;
     text-decoration: none;
 }
 
@@ -43,6 +63,46 @@ nav > a {
     border-radius: 0 5px 5px 0px;
 }
 
-body {
-    background-color: #EDE8F5;
+/* .......................IMAGE........................... */
+
+.banner-image {
+    height: 450px;  
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+    background-position: center;
+}
+
+.body-line{
+    border: 2px solid #212a31;
+}
+
+/* ......................MESSAGE US............................ */
+
+.contentmessage {
+    display: flex;
+    justify-content: space-between
+}
+
+.kanan-form{
+    border :1px solid;
+    padding-top: 10px;
+    padding-right: 200px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+}
+
+
+/* ......................FOOTER............................ */
+
+footer{
+    height:60px;
+    background-color: #003135;
+    color:#c4c4c5;
+    text-align: center;
+}
+
+footer > p {
+    padding-top: 30px;
 }
