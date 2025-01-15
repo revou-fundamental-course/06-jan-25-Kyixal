@@ -16,6 +16,7 @@ body {
     background-color: #ede8f5;
     color:#001e20;
     text-align: justify;
+
 }
 
 .main-header {
@@ -23,8 +24,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #003135;
-    padding:16px 24px;
-    
+    padding:16px 24px;    
 }
 
 .logo-icon {
@@ -63,11 +63,15 @@ nav > a {
     border-radius: 0 5px 5px 0px;
 }
 
+main {
+    margin: 20px;
+}
+
 /* .......................IMAGE........................... */
 
 .banner-image {
-    height: 450px;  
-    background-image: url(https://picsum.photos/200);
+    height: 450px;
+    width: 100%;
     background-size: cover;
     background-position: center;
 }
