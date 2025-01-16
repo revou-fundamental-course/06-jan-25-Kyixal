@@ -72,15 +72,49 @@
             <main class="contentmessage">
                 <div class="kiri-form">
                     <!-- Form -->
-                    <div class="label">
-                        <p>Name :</p>
-                        <p>Date of Birth :</p>
-                        <p>Gender :</p>
-                        <p>Message :</p>
-                    </div>
-                    <div class="fill-in-form">
                     <form name="message-form" onsubmit="return validateForm()">
-                            <input placeholder="Enter Your Name" type="text" name="full-name" required>
+                        <div class="row">
+                            <div class="col-left">
+                            <label for="full-name">Full Name :</label>
+                            </div>
+                            <div class="col-right">
+                            <input type="text" name="full-name" placeholder="Enter Your Name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-left">
+                            <label for="birth-date">Date of Birth :</label>
+                            </div>
+                            <div class="col-right">
+                            <input type="date" name="birth-date" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-left">
+                            <label for="gender">Gender :</label>
+                            </div>
+                            <div class="col-right">
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female" required>
+                            <label for="female">Female</label>  
+                            </div>
+                        </div>
+                        <div class="row">   
+                            <div class="col-left">
+                            <label for="messages">Message :</label>
+                            </div>
+                            <div class="col-right">
+                                <textarea placeholder="Write Your Message..." name="messages" required></textarea>  
+                            </div>
+                        </div>
+                        <div class="row">
+                            <input class="submit" type="submit" value="Submit">
+                        </div>
+                        
+
+
+                        <!-- <input placeholder="Enter Your Name" type="text" name="full-name" required>
                         <br/>
                             <input type="date" name="birth-date" required>
                         <br/>
@@ -91,9 +125,8 @@
                         <br/>
                             <textarea placeholder="Write Your Message..." name="messages" required></textarea>
                         <br/>
-                            <input class="submit" type="submit" value="Submit"/>
+                            <input class="submit" type="submit" value="Submit"/> -->
                     </form>
-                    </div>
                 </div>
                 <div class="kanan-form">
                     <p>Name :<span id="sender-full-name"></span></p> 

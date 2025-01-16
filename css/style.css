@@ -92,10 +92,49 @@ button {
 }
 
 /* ......................MESSAGE US............................ */
+input[type=text], select, textarea {
+    width:90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+  }
+
+input[type=submit] {
+    background-color: #212a31;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.col-left {
+    float: left;
+    width: 75;
+    margin-top: 6px;
+  }
+  
+  .col-right {
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+  }
 
 .contentmessage {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center;
 }
 
 .kanan-form{
@@ -103,17 +142,8 @@ button {
     padding-top: 10px;
     padding-right: 100px;
     padding-bottom: 10px;
-    padding-left: 40px;
-    margin-right: 30px;
-    margin-bottom: 40px;
-}
-
-.kiri-form {
-    display: flex;
-}
-
-form {
-    padding-top: 12px;
+    padding-left: 30px;
+    margin: 30px;
 }
 
 /* ......................FOOTER............................ */
